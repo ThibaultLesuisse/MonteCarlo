@@ -57,10 +57,12 @@ public class MonteCarlo {
     private JLabel lblBinValue8;
     private JLabel lblBinValue9;
     private JLabel lblBinValue10;
+    private JLabel lblIntro;
     private  String[] columnNames = { "Aantal", "Prijs", "Omzet", "Kosten", "Winst" };
 
     private JDKRandomGenerator rgen = new JDKRandomGenerator();
     public MonteCarlo() {
+
         table1.setVisible(false);
         Scroll.setVisible(false);
         button1.addActionListener(new ActionListener() {
@@ -105,7 +107,6 @@ public class MonteCarlo {
                 double minRev = revList[0];
                 double maxRev = revList[0];
                 double sumRev = 0;
-
                 double minCost = costlist[0];
                 double maxCost = costlist[0];
                 double sumCost = 0;
